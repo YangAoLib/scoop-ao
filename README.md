@@ -10,6 +10,7 @@ A personal [Scoop](https://scoop.sh) bucket maintained by YangAoLib.
 ```powershell
 scoop bucket add ao https://github.com/YangAoLib/scoop-ao
 scoop install ao/kook
+scoop install ao/benchlocal
 ```
 
 ## Manifests
@@ -17,6 +18,7 @@ scoop install ao/kook
 | Name | Description |
 | --- | --- |
 | [kook](https://www.kookapp.cn) | Voice communication tool |
+| [benchlocal](https://github.com/stevibe/BenchLocal) | 本地优先的大语言模型基准测试与模型对比桌面应用 |
 
 ## Maintenance
 
