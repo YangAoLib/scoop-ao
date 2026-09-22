@@ -9,7 +9,7 @@
     },
     "description": "A useful voice communication tool.",
     "extract_to": "tmp",
-    "hash": "93584d416b8fd90f6fe1a4cb214693c64a49aab52aef740598d9e6831d46a983",
+    "hash": "0109ad9adaba5fa8fe6a86a166182ac24e28f78a052b5d3ecdd7e42481b1e283",
     "homepage": "https://www.kookapp.cn",
     "license": {
         "identifier": "Freeware",
@@ -35,6 +35,6 @@
             "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
-    "url": "https://dorado-api.chawyehsu.deno.net/kook?scoop_no_referer=sourceforge.net&version=0.110.0.0#/dl.7z",
-    "version": "0.110.0"
+    "url": "https://dorado-api.chawyehsu.deno.net/kook?scoop_no_referer=sourceforge.net&version=0.111.0.0#/dl.7z",
+    "version": "0.111.0"
 }
