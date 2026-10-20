@@ -1,0 +1,45 @@
+{
+    "version": "1.26.9",
+    "description": "基于 Electron 的 Mihomo 图形界面客户端。",
+    "homepage": "https://github.com/xishang0128/sparkle",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.9/sparkle-windows-1.26.9-x64-setup.exe#/dl.7z",
+            "hash": "81eb6fa8658a5ae774d2ffab5ca5c42bd69257a2a38ce67c82bcbfd7e764e153",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse -ErrorAction SilentlyContinue"
+                ]
+            }
+        },
+        "arm64": {
+            "url": "https://github.com/xishang0128/sparkle/releases/download/1.26.9/sparkle-windows-1.26.9-arm64-setup.exe#/dl.7z",
+            "hash": "808f56817ca3a1bf0f8911473edf80205cb15372cd26d1d80110c7b738119128",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse -ErrorAction SilentlyContinue"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "Sparkle.exe",
+            "Sparkle"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/xishang0128/sparkle/releases/download/$version/sparkle-windows-$version-x64-setup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/xishang0128/sparkle/releases/download/$version/sparkle-windows-$version-arm64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
