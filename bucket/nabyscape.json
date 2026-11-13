@@ -1,0 +1,33 @@
+{
+    "version": "2.26.0",
+    "description": "可高度自定义的 Windows 桌面小岛，集音乐播放、专注模式、实时歌词与个人 AI 伴侣于一体。",
+    "homepage": "https://github.com/BillyNabil/nabyscape",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/BillyNabil/nabyscape/releases/download/v2.26.0/NabyScape-win-x64-Portable.zip",
+            "hash": "7e660e1d6486a6ddd89484063f525b71735ffefdc29cca79011dae8fed2e65bc"
+        },
+        "arm64": {
+            "url": "https://github.com/BillyNabil/nabyscape/releases/download/v2.26.0/NabyScape-win-arm64-Portable.zip",
+            "hash": "fbb381477e7bd8957a4db0aa2eb8bc76995ad724f32258a23561eb3b5c372eae"
+        }
+    },
+    "shortcuts": [
+        [
+            "NabyScape.exe",
+            "NabyScape"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/BillyNabil/nabyscape/releases/download/v$version/NabyScape-win-x64-Portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/BillyNabil/nabyscape/releases/download/v$version/NabyScape-win-arm64-Portable.zip"
+            }
+        }
+    }
+}
