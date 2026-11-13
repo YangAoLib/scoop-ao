@@ -1,16 +1,16 @@
 {
-    "version": "2.26.1-cn.3",
+    "version": "2.26.1-cn.4",
     "description": "可高度自定义的 Windows 桌面小岛，集音乐播放、专注模式、实时歌词与个人 AI 伴侣于一体。中文增强版：简体中文界面与国内天气数据源（中央气象台/和风）。",
     "homepage": "https://github.com/YangAoLib/nabyscape",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/YangAoLib/nabyscape/releases/download/v2.26.1-cn.3/NabyScape-win-x64-Portable.zip",
-            "hash": "1f5c55f8596e681813a5ad6b864a6350bdc64f4002e09eebc080ab3a7b49e0af"
+            "url": "https://github.com/YangAoLib/nabyscape/releases/download/v2.26.1-cn.4/NabyScape-win-x64-Portable.zip",
+            "hash": "1fcb4e0ca23aa108eed63ba8d28a8aa25594d9020cbcac87eb3573bbdcadf664"
         },
         "arm64": {
-            "url": "https://github.com/YangAoLib/nabyscape/releases/download/v2.26.1-cn.3/NabyScape-win-arm64-Portable.zip",
-            "hash": "ca87e5afb839ef9e42a2fa4165f859122e50dcd13b6ce18c45032e2e7877ec66"
+            "url": "https://github.com/YangAoLib/nabyscape/releases/download/v2.26.1-cn.4/NabyScape-win-arm64-Portable.zip",
+            "hash": "75fe8fcfbc332d04408400b367fe7fda2c122a624f8a3986dd4f85c3354d4597"
         }
     },
     "shortcuts": [
