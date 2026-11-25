@@ -1,0 +1,38 @@
+{
+    "version": "2.0.5",
+    "description": "轻量、安全、AI 驱动的 SSH 桌面客户端，可像操作 Windows 一样管理 Linux 服务器，内置 AI 终端、文件管理、应用中心与插件机制。",
+    "homepage": "https://github.com/GMSSH/GMSSH",
+    "license": "Proprietary",
+    "notes": [
+        "应用自带自动更新器，请用 scoop update gmssh 更新，不要使用应用内的检查更新。",
+        "配置与数据保存在用户目录下的 %APPDATA%\\GMSSH，Scoop 升级或卸载都不会删除。"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/GMSSH/GMSSH/releases/download/Client/GMSSH-win-2.0.5-x64-pro.exe#/dl.7z",
+            "hash": "6c493994f5b5ec56c9c86bdcfa8fe4aeac44073e9dc31942f932704f66044dae"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse -ErrorAction SilentlyContinue"
+    ],
+    "shortcuts": [
+        [
+            "GMSSH.exe",
+            "GMSSH"
+        ]
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/GMSSH/GMSSH/releases/tags/Client",
+        "jsonpath": "$.name",
+        "regex": "[vV](\\d+(?:\\.\\d+)+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/GMSSH/GMSSH/releases/download/Client/GMSSH-win-$version-x64-pro.exe#/dl.7z"
+            }
+        }
+    }
+}
