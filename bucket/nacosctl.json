@@ -1,0 +1,31 @@
+{
+    "version": "0.1.0",
+    "description": "用于管理 r-nacos 和 Alibaba Nacos 3.x 的命令行工具，支持管理命名空间、配置和服务，以及查询服务实例。",
+    "homepage": "https://github.com/YangAoLib/nacosctl",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/YangAoLib/nacosctl/releases/download/v0.1.0/nacosctl_v0.1.0_windows_amd64.zip",
+            "hash": "dec528010d70c04607c62b70ccbf556565429a0fd582fc50f730259ce7ff3f37"
+        },
+        "arm64": {
+            "url": "https://github.com/YangAoLib/nacosctl/releases/download/v0.1.0/nacosctl_v0.1.0_windows_arm64.zip",
+            "hash": "26d872cbbb786a587e63d7a44051fa666500a37158e24be63386b46d0b995d6b"
+        }
+    },
+    "bin": "nacosctl.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/YangAoLib/nacosctl/releases/download/v$version/nacosctl_v$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/YangAoLib/nacosctl/releases/download/v$version/nacosctl_v$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/YangAoLib/nacosctl/releases/download/v$version/checksums.txt"
+        }
+    }
+}
